@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucila Gómez — Backend Developer</title>
+<meta name="description" content="Lucila Gómez — Backend developer (Python) with a QA automation background. Córdoba, Argentina · open to remote work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf7; --surface:#ffffff; --text:#1c1b19; --muted:#5f5b54; --line:#e6e2da;
+  --accent:#4f46e5; --accent-soft:#eef0ff; --tag:#f2efe8;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#111113; --surface:#18181b; --text:#ececef; --muted:#a1a1aa; --line:#2a2a2f;
+         --accent:#8b8cf8; --accent-soft:#23233a; --tag:#222226; }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:16px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav .logo{font-weight:700;color:var(--text)}
+nav ul{display:flex;gap:20px;list-style:none;font-size:14px}
+nav ul a{color:var(--muted)}
+header{padding:80px 0 56px}
+.eyebrow{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent);margin-bottom:14px}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.1;letter-spacing:-.02em;margin-bottom:18px}
+.lead{font-size:18px;color:var(--muted);max-width:620px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:24px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column}
+.card h3{font-size:18px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15px;flex:1}
+.card .kind{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent);margin-bottom:8px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.tag{font-size:12px;background:var(--tag);color:var(--text);padding:3px 9px;border-radius:999px}
+.card .links{margin-top:14px;font-size:14px;font-weight:600}
+.job{display:grid;grid-template-columns:160px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job .when{color:var(--muted);font-size:14px;font-family:'JetBrains Mono',monospace}
+.job h3{font-size:17px}
+.job .co{color:var(--accent);font-weight:600}
+.job p{color:var(--muted);font-size:15px;margin-top:4px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.skills h3{font-size:15px;margin-bottom:10px}
+footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (max-width:680px){
+  nav ul{display:none}
+  header{padding:56px 0 40px}
+  .grid,.skills{grid-template-columns:1fr}
+  .job{grid-template-columns:1fr;gap:4px}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="#">Lucila Gómez</a>
+  <ul><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul>
+</div></nav>
+
+<header><div class="wrap">
+  <p class="eyebrow">Backend · Python · QA Automation · LLM apps</p>
+  <h1>Hi, I'm Lucila. I build backend systems and make sure they actually work.</h1>
+  <p class="lead">Backend developer working with async Python, real-time data and forecasting models, with a background in test automation. Based in Córdoba, Argentina and open to remote roles.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://www.linkedin.com/in/lucila-g%C3%B3mez-71252423a/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/gomezLucila25" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></header>
+
+<section id="projects"><div class="wrap">
+  <h2>Selected projects</h2>
+  <div class="grid">
+    <article class="card">
+      <span class="kind">Test automation · flagship</span>
+      <h3>Web Test Automation Framework</h3>
+      <p>A Selenium framework built step by step. It uses Factory, Singleton, Decorator and Strategy patterns, runs TestNG and Cucumber BDD suites in parallel, and reports to Allure through a Jenkins CI pipeline.</p>
+      <div class="tags"><span class="tag">Java</span><span class="tag">Selenium</span><span class="tag">Cucumber</span><span class="tag">Allure</span><span class="tag">Jenkins</span></div>
+      <a class="links" href="https://github.com/gomezLucila25/selenium-framework-patterns" target="_blank" rel="noopener">View code →</a>
+    </article>
+    <article class="card">
+      <span class="kind">Python · LLM</span>
+      <h3>LIA Mail Triage</h3>
+      <p>A local FastAPI app that reads Gmail through read-only OAuth, classifies emails with an LLM (Gemini or Claude) and shows a dashboard that puts deadlines first. Tested with pytest.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Gmail API</span><span class="tag">LLMs</span></div>
+      <a class="links" href="https://github.com/gomezLucila25/lia" target="_blank" rel="noopener">View code →</a>
+    </article>
+    <article class="card">
+      <span class="kind">Testing · defects found</span>
+      <h3>Testing a third-party library</h3>
+      <p>Black-box testing of a library shipped only as a jar. 90 data-driven tests run in parallel, and they surfaced real defects, such as cos() returning sin().</p>
+      <div class="tags"><span class="tag">Java</span><span class="tag">TestNG</span><span class="tag">Data-driven</span></div>
+      <a class="links" href="https://github.com/gomezLucila25/calculator" target="_blank" rel="noopener">View code →</a>
+    </article>
+    <article class="card">
+      <span class="kind">API testing</span>
+      <h3>REST API Test Automation</h3>
+      <p>Status, header, body and full CRUD checks against a REST resource, written given/when/then with Rest Assured and run in parallel.</p>
+      <div class="tags"><span class="tag">Java</span><span class="tag">Rest Assured</span><span class="tag">TestNG</span></div>
+      <a class="links" href="https://github.com/gomezLucila25/ApiAutomation" target="_blank" rel="noopener">View code →</a>
+    </article>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="job">
+    <span class="when">2025 — now</span>
+    <div><h3>Backend Developer · <span class="co">Koin3</span></h3>
+    <p>Async Python services for a real-time data platform in production. I work on event-driven workers with Redis Pub/Sub and Streams, time-series storage in QuestDB and MariaDB, a rules engine with hot-reloadable configuration, and forecasting models (PyTorch LSTM, ARIMA, Optuna). Tested with pytest and typed with mypy.</p></div>
+  </div>
+  <div class="job">
+    <span class="when">2025 — 2026</span>
+    <div><h3>Java Automation Engineer (Intern) · <span class="co">EPAM Systems</span></h3>
+    <p>UI and API test suites with Selenium, TestNG, JUnit 5 and REST Assured. Reusable Page Object frameworks, BDD with Cucumber, and CI with GitHub Actions and Jenkins.</p></div>
+  </div>
+  <div class="job">
+    <span class="when">2025</span>
+    <div><h3>Data Engineer · <span class="co">Polo Industrial 52</span></h3>
+    <p>Python and SQL scripts to transform and validate data in migration projects. I consumed APIs and cross-checked thousands of records against PostgreSQL.</p></div>
+  </div>
+  <div class="job">
+    <span class="when">2023 — 2024</span>
+    <div><h3>Software Engineer · <span class="co">Zaple</span></h3>
+    <p>Backend services in Ruby on Rails, AWS deployments (EC2, S3), server monitoring and troubleshooting.</p></div>
+  </div>
+  <div class="job">
+    <span class="when">Side project</span>
+    <div><h3>Co-founder & CPO · <span class="co">Stocky</span></h3>
+    <p>A WhatsApp shopping assistant for families in Latin America, built with FastAPI, the WhatsApp Business API, LLMs and Supabase.</p></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Backend & data</h3><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">asyncio</span><span class="tag">Redis</span><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">MariaDB</span><span class="tag">QuestDB</span><span class="tag">Ruby on Rails</span><span class="tag">AWS</span></div></div>
+    <div><h3>Testing & quality</h3><div class="tags"><span class="tag">pytest</span><span class="tag">mypy</span><span class="tag">Selenium</span><span class="tag">TestNG</span><span class="tag">Cucumber</span><span class="tag">REST Assured</span><span class="tag">Allure</span><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span></div></div>
+    <div><h3>ML & AI</h3><div class="tags"><span class="tag">PyTorch</span><span class="tag">ARIMA</span><span class="tag">Optuna</span><span class="tag">LLM APIs</span><span class="tag">Claude</span><span class="tag">Gemini</span></div></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="lead">I'm open to remote backend, Python and AI engineering roles, as well as freelance projects. The best way to reach me is LinkedIn.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://www.linkedin.com/in/lucila-g%C3%B3mez-71252423a/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+    <a class="btn" href="https://github.com/gomezLucila25" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">Lucila Gómez · Systems Engineering @ Universidad Católica de Córdoba · Spanish (native), English (full professional)</div></footer>
+</body>
+</html>
